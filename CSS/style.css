@@ -1,0 +1,149 @@
+/*Borar estilos por defecto--------------------------*/
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*Fondo ---------------------------------------*/
+body{
+  background-color: gray;
+}
+/*Texto de Inicio*//*----------------------------*/
+h1{
+  text-align: center;/*Centra texto*/
+  font-size: 50px;/*Tamaño del texto*/
+  color: white;/*Color del titulo*/
+  font-weight: bold;
+}
+/*Menu-----------------------------------*/
+nav{
+  background: rgb(56, 56, 56);/*Color del fondo*/
+  padding: 10px;/*Separacion del margen y los botones*/
+  display: flex;
+  justify-content: center;
+}
+/*Submeus--------------------------------*/
+.navEnlace{
+  background: brown; /*Color de fondo*/
+  color: white;/*Color de texto*/
+  padding: 10px 30px;/*Separacion entre el texto y el margen abajoArriba y izquierdaDerecha*/
+  display: inline-block;/*Ordena en de forma horizontal*/
+  font-size: 30px;
+  font-weight: bold;
+}
+/*Animacion del menu*/
+.navEnlace:hover{
+  background: rgb(102, 38, 38);
+}
+/*Fotos de cada region*//*------------------------*/
+.inicio{
+  width: 200px;
+}
+/*Sub titulos costa sierra oriente galapagos*/
+h2{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+/*Imagenes del cuerpo*/
+img{
+  margin: auto;
+  display: flex;
+}
+/*Bloque regiones*/
+.regiones{
+margin: 10px auto;
+background-color: #2ec5c5;
+border: 5px solid #5a0000;
+display: flex;
+justify-content: space-around;
+}
+/*Animacion de texto de cada comida de cada region*/
+.textoRegiones:hover{
+  background: rgba(0, 0, 0, 0.315);
+}
+/*Texto de regiones*/
+.textoRegiones{
+  color: white;
+  border: solid white 2px;
+  padding: 1px 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5px;
+  font-weight: bold;
+}
+/*Cada bloque de las regiones*/
+.region{
+  border: solid rgb(33, 229, 255) 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+/*Pie de pagina*/
+.pieDePagina{
+  
+  display:flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: white;
+}
+.redes{
+  width: 200px;
+  display: block;
+}
+.redes:hover{
+  background: rgb(56, 56, 56);
+  filter: opacity(50%);/*cambia de color la foto*/
+}
+.subtemas{
+  border-bottom: solid white 5px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-bottom: 5px;
+}
+.plato{
+  border-bottom: solid  5px;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 5px;
+  font-size: 30px;
+}
+/*Imagenes de los platos tipicos*/
+.imageneDePlato{
+max-width: 70%;
+}
+h3{
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border-bottom: solid rgb(56, 56, 56) 5px;
+  margin-right: 30%;
+}
+li{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/*Cuando se minimiza*/
+@media (max-width: 600px){
+  nav{
+    flex-direction: column;
+  }
+  .navEnlace{
+    margin: 5px;
+  }
+  .regiones{
+    flex-direction: column;
+  }
+  .redes{
+    width: 150px;
+  }
+}
